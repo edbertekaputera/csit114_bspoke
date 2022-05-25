@@ -20,22 +20,35 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg py-3 fixed-top navbar-expand-lg" style="box-shadow: 1px 0px 1px;background: var(--bs-white);">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="width: 43px;height: 43px;"><img src="assets/img/bspoke_logotrans.png" style="width: 31px;"></span><span>Spoke</span></a>
-            <div class="d-flex w-auto overflow-auto mb-1 mt-1"><input type="search" class="form-control" style="width: 358.875px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;margin-left: 0px;" placeholder="Search Products and Spareparts"><button class="btn btn-primary" type="button" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;background: var(--bs-gray-300);color: rgb(0,0,0);border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-color: var(--bs-gray-400);"><i class="fas fa-filter"></i></button><button class="btn btn-primary" type="button" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;"><i class="fas fa-search"></i></button></div><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2" style="margin-left: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="../homepage/index.html">
+          <span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="width: 43px;height: 43px;">
+            <img src="../homepage/assets/img/bspoke_logotrans.png" style="width: 31px;"></span><span>Spoke</span></a>
+            <div class="d-flex w-auto overflow-auto mb-1 mt-1">
+                <input type="search" class="form-control" style="width: 358.875px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;margin-left: 0px;" placeholder="Search Products and Spareparts">
+                <button class="btn btn-primary" type="button" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;background: var(--bs-gray-300);color: rgb(0,0,0);border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-color: var(--bs-gray-400);">
+                    <i class="fas fa-filter"></i>
+                </button>
+                <button class="btn btn-primary" type="button" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;" onclick="window.location.href='../ShoppingCart/search.html'">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2" style="margin-left: 0px;">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary" type="button" style="color: var(--bs-gray-600);background: var(--bs-white);border-color: var(--bs-gray-500);margin-right: 0px;margin-left: 0px;"><i class="far fa-edit" style="color: var(--bs-gray-600);"></i>&nbsp;<span class="d-lg-none d-xl-inline">Customize</span></button></li>
-                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary" type="button" style="margin-left: 0px;margin-right: 0px;color: var(--bs-gray-700);background: var(--bs-white);border-color: var(--bs-gray-500);"><i class="icon ion-android-bicycle"></i><span class="d-lg-none d-xl-inline">&nbsp;Rent</span>&nbsp;</button></li>
-                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary" type="button" style="background: var(--bs-white);color: var(--bs-gray-900);border-width: 1px;border-color: var(--bs-gray-500);margin-right: 0px;margin-left: 0px;"><i class="fas fa-shopping-basket"></i></button></li>
+                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary" type="button" style="color: var(--bs-gray-600);background: var(--bs-white);border-color: var(--bs-gray-500);margin-right: 0px;margin-left: 0px;" onclick="window.location.href='../ProductCustomization/product customization.html'"><i class="far fa-edit" style="color: var(--bs-gray-600);"></i>&nbsp;<span class="d-lg-none d-xl-inline">Customize</span></button></li>
+                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary" type="button" style="margin-left: 0px;margin-right: 0px;color: var(--bs-gray-700);background: var(--bs-white);border-color: var(--bs-gray-500);" onclick="window.location.href='../Rental/Rent_Scan.html'"><i class="icon ion-android-bicycle"></i><span class="d-lg-none d-xl-inline">&nbsp;Rent</span>&nbsp;</button></li>
+                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary shopping-cart" type="button" style="background: var(--bs-white);color: var(--bs-gray-900);border-width: 1px;border-color: var(--bs-gray-500);margin-right: 0px;margin-left: 0px;" onclick="window.location.href='/ShoppingCart/cart.html'"><i class="fas fa-shopping-basket"></i></button></li>
                     <li class="nav-item mt-1 mt-lg-0 me-2" style="margin-left: 0px;">
                         <div class="dropdown"><button class="btn btn-primary dropdown-toggle" type="button" aria-expanded="false" data-bs-toggle="dropdown"><i class="far fa-user"></i>&nbsp;Account</button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Reward</a><a class="dropdown-item" href="#">Personalize</a><a class="dropdown-item" href="#">Sell</a><a class="dropdown-item" href="#">Wallet</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="../Marketing/index.html">Reward</a><a class="dropdown-item" href="../CustomerAccount/edit_profile.html">Personalize</a><a class="dropdown-item" href="../OrderFulfillment/shippingstatus.html">Shipping Status</a><a class="dropdown-item" href="../Reselling/PostForSale.html">Sell</a><a class="dropdown-item" href="../Payment &amp; Billing/P&amp;B_Wallet.html">Wallet</a></div>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+      </nav>
     <div></div>
     <div class="container sp_container" style="max-width: 400px;">
         <div class="row">

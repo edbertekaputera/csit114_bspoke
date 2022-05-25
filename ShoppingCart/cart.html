@@ -22,170 +22,39 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg py-3 fixed-top navbar-expand-lg" style="box-shadow: 1px 0px 1px;background: var(--bs-white);">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="../homepage/index.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="width: 43px;height: 43px;"><img src="assets/img/bspoke_logotrans.png" style="width: 31px;"></span><span>Spoke</span></a>
-            <div class="d-flex w-auto overflow-auto mb-1 mt-1"><input type="search" class="form-control" style="width: 358.875px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;margin-left: 0px;" placeholder="Search Products and spareparts"><button class="btn btn-primary" type="button" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;background: var(--bs-gray-300);color: rgb(0,0,0);border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-color: var(--bs-gray-400);"><i class="fas fa-filter"></i></button><a class="btn btn-primary" role="button" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;" href="search.html"><i class="fas fa-search"></i></a></div><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2" style="margin-left: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="../homepage/index.html">
+          <span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="width: 43px;height: 43px;">
+            <img src="../homepage/assets/img/bspoke_logotrans.png" style="width: 31px;"></span><span>Spoke</span></a>
+            <div class="d-flex w-auto overflow-auto mb-1 mt-1">
+                <input type="search" class="form-control" style="width: 358.875px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;margin-left: 0px;" placeholder="Search Products and Spareparts">
+                <button class="btn btn-primary" type="button" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;background: var(--bs-gray-300);color: rgb(0,0,0);border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-color: var(--bs-gray-400);">
+                    <i class="fas fa-filter"></i>
+                </button>
+                <button class="btn btn-primary" type="button" style="border-top-left-radius: 0px;border-bottom-left-radius: 0px;" onclick="window.location.href='../ShoppingCart/search.html'">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2" style="margin-left: 0px;">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary" type="button" style="color: var(--bs-gray-600);background: var(--bs-white);border-color: var(--bs-gray-500);margin-right: 0px;margin-left: 0px;"><i class="far fa-edit" style="color: var(--bs-gray-600);"></i>&nbsp;<span class="d-lg-none d-xl-inline">Customize</span></button></li>
-                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary" type="button" style="margin-left: 0px;margin-right: 0px;color: var(--bs-gray-700);background: var(--bs-white);border-color: var(--bs-gray-500);"><i class="icon ion-android-bicycle"></i><span class="d-lg-none d-xl-inline">&nbsp;Rent</span>&nbsp;</button></li>
-                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary" type="button" style="background: var(--bs-white);color: var(--bs-gray-900);border-width: 1px;border-color: var(--bs-gray-500);margin-right: 0px;margin-left: 0px;"><i class="fas fa-shopping-basket"></i></button></li>
+                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary" type="button" style="color: var(--bs-gray-600);background: var(--bs-white);border-color: var(--bs-gray-500);margin-right: 0px;margin-left: 0px;" onclick="window.location.href='../ProductCustomization/product customization.html'"><i class="far fa-edit" style="color: var(--bs-gray-600);"></i>&nbsp;<span class="d-lg-none d-xl-inline">Customize</span></button></li>
+                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary" type="button" style="margin-left: 0px;margin-right: 0px;color: var(--bs-gray-700);background: var(--bs-white);border-color: var(--bs-gray-500);" onclick="window.location.href='../Rental/Rent_Scan.html'"><i class="icon ion-android-bicycle"></i><span class="d-lg-none d-xl-inline">&nbsp;Rent</span>&nbsp;</button></li>
+                    <li class="nav-item mt-1 mt-lg-0 me-2"><button class="btn btn-primary shopping-cart" type="button" style="background: var(--bs-white);color: var(--bs-gray-900);border-width: 1px;border-color: var(--bs-gray-500);margin-right: 0px;margin-left: 0px;" onclick="window.location.href='/ShoppingCart/cart.html'"><i class="fas fa-shopping-basket"></i></button></li>
                     <li class="nav-item mt-1 mt-lg-0 me-2" style="margin-left: 0px;">
                         <div class="dropdown"><button class="btn btn-primary dropdown-toggle" type="button" aria-expanded="false" data-bs-toggle="dropdown"><i class="far fa-user"></i>&nbsp;Account</button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Reward</a><a class="dropdown-item" href="#">Personalize</a><a class="dropdown-item" href="#">Sell</a><a class="dropdown-item" href="#">Wallet</a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="../Marketing/index.html">Reward</a><a class="dropdown-item" href="../CustomerAccount/edit_profile.html">Personalize</a><a class="dropdown-item" href="../OrderFulfillment/shippingstatus.html">Shipping Status</a><a class="dropdown-item" href="../Reselling/PostForSale.html">Sell</a><a class="dropdown-item" href="../Payment &amp; Billing/P&amp;B_Wallet.html">Wallet</a></div>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+      </nav>
     <div class="container sp_container">
         <div class="row" style="margin-top: 15px;">
             <div class="col">
-                <div class="reflow-shopping-cart">
-
-                    <div class="ref-loading-overlay"></div>
-                    <div class="ref-message"></div>
-    
-                    <div class="ref-cart">
-                        <div class="ref-heading">Shopping Cart</div>
-                        <div class="ref-th">
-                            <div class="ref-product-col">Product</div>
-                            <div class="ref-price-col">Price</div>
-                            <div class="ref-quantity-col">Quantity</div>
-                            <div class="ref-total-col">Total</div>
-                        </div>
-                        <div class="ref-cart-table"></div>
-                        <div class="ref-footer">
-                            <div class="ref-links"></div>
-                            <div class="ref-totals">
-                                <div class="ref-subtotal"></div>
-                                <div class="ref-shipping-taxes">Shipping and taxes are calculated<br> during checkout.</div>
-                                <div class="ref-button ref-checkout-button">Checkout</div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="ref-checkout">
-                        <div class="ref-checkout-content">
-                            <form class="ref-details">
-                                <div class="ref-back">\u2190 Back to Cart</div>
-                                <div class="ref-heading">Customer Details</div>
-                                <label>
-                                    <span>Email</span>
-                                    <input type="email" name="email" id="ref-field-email" class="ref-form-control" value="" required data-state-src="email" />
-                                    <div class="ref-validation-error"></div>
-                                </label>
-                                <label>
-                                    <span>Phone</span>
-                                    <input type="tel" name="phone" id="ref-field-phone" class="ref-form-control" value="" pattern="[0-9\\+\\- ]{5,30}" placeholder="+1234567890" required  data-state-src="phone" />
-                                    <div class="ref-validation-error"></div>
-                                </label>
-                                <div class="ref-shipping-address-holder"></div>
-                                <div class="ref-tax-note">
-                                    <label class="ref-checkbox">
-                                        <input type="checkbox" id="ref-field-have-tax-exemption" class="ref-form-control" />
-                                        <span></span>
-                                    </label>
-                                    <div class="ref-tax-exemption-fields">
-                                        <label class="ref-tax-exemption-file">
-                                            <span></span>
-                                            <input type="file" name="tax-exemption-file" id="ref-field-exemption-file" class="ref-form-control" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" required />
-                                            <div class="ref-validation-error"></div>
-                                        </label>
-                                        <label class="ref-tax-exemption-text">
-                                            <span></span>
-                                            <input type="text" name="tax-exemption-text" id="ref-field-exemption-text" class="ref-form-control" required data-state-src="tax-text" />
-                                            <div class="ref-validation-error"></div>
-                                        </label>
-                                    </div>
-                                </div>
-                                <hr />
-                                <label class="ref-field-collapsible ref-note-to-seller">
-                                    <span class="ref-field-toggle">Note to Seller</span>
-                                    <textarea id="ref-field-note-seller" class="ref-form-control" name="note-to-seller" row="4" maxlength="1000" placeholder="If you have any specific instructions you want to give to the seller, write them here." data-state-src="note"></textarea>
-                                    <div class="ref-validation-error"></div>
-                                </label>
-                                <hr />
-                                <label class="ref-accept-terms"></label>
-                                <div class="ref-button ref-next">Next</div>
-                            </form>
-                            <div class="ref-shipping-payment">
-                                <div class="ref-back">\u2190 Back to Details</div>
-                                <div class="ref-heading">Shipping &amp; Payment</div>
-                                <div class="ref-express">
-                                    <div class="ref-paypal-button-holder"></div>
-                                    <span>Express Checkout</span>
-                                </div>
-                                <div class="ref-standard">
-                                    <form class="ref-shipping-form">
-                                        <div class="ref-heading-small">Shipping Address</div>
-                                        <div class="ref-shipping-address-holder"></div>
-                                        <label class="ref-checkbox ref-billing-checkbox">
-                                            <input type="checkbox" id="ref-field-billing-same-shipping" />
-                                            <span>Billing address same as shipping</span>
-                                        </label>
-                                        <fieldset class="ref-billing-address" disabled>
-                                            <div class="ref-heading-small">Billing Address</div>
-                                            <div class="ref-billing-address-holder"></div>
-                                        </fieldset>
-                                        <div class="ref-heading-shipping-methods ref-heading-small">Shipping Method</div>
-                                        <div class="ref-shipping-methods ref-error-parent"></div>
-                                    </form>
-                                    <div>
-                                        <div class="ref-heading-small">Payment</div>
-                                        <div class="ref-standard-payment-buttons"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ref-instructions">
-                                <div class="ref-heading ref-payment-method-name"></div>
-                                <div class="ref-payment-method-instructions"></div>
-                            </div>
-                            <div class="ref-links"></div>
-                        </div>
-                        <div class="ref-checkout-summary">
-                            <div class="ref-heading">Order Summary</div>
-                            <div class="ref-products"></div>
-                            <hr>
-                            <div class="ref-coupon-code">
-                                <div class="ref-coupon-container">
-                                    <div class="ref-coupon-input-holder">
-                                        <input id="ref-coupon-input" class="ref-form-control" name="coupon-code" type="text" maxlength="32" autocomplete="off" placeholder="Enter coupon or promo code">
-                                        <span class="ref-coupon-input-clear" title="Clear">\u2715</span>
-                                    </div>
-                                    <div class="ref-button ref-button-success ref-add-code inactive">Apply</div>
-                                </div>
-                                <div class="ref-validation-error"></div>
-                            </div>
-                            <hr>
-                            <div class="ref-totals">
-                                <div class="ref-subtotal">
-                                    <div class="ref-row"><span>Subtotal</span><span></span></div>
-                                </div>
-                                <div class="ref-applied-coupon">
-                                    <div class="ref-row">
-                                        <div class="ref-row"><span></span><span class="ref-remove-coupon">remove</span></div>
-                                        <span></span>
-                                    </div>
-                                    <div class="ref-applied-coupon-error"></div>
-                                </div>
-                                <div class="ref-shipping">
-                                    <div class="ref-row"><span>Shipping</span><span></span></div>
-                                </div>
-                                <div class="ref-taxes">
-                                    <div class="ref-row"><span></span><span></span></div>
-                                </div>
-                            </div>
-                            <hr />
-                            <div class="ref-total">
-                                <div class="ref-row"><span>Total</span><span></span></div>
-                                <div class="ref-total-note">All prices are in <span></span></div>
-                            </div>
-                        </div>
-                        <div class="ref-summary-toggle ref-field-collapsible">
-                            <span class="ref-field-toggle">Show Summary</span>
-                        </div>
-                    </div>
+                <div data-reflow-type="shopping-cart"></div>
             </div>
         </div>
         <footer class="text-center">
@@ -206,7 +75,7 @@
                             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
                         </svg></li>
                 </ul>
-                <p class="mb-0">Copyright © 2022 B-Spoke</p>
+                <p class="mb-0">Copyright © 2022 Brand</p>
             </div>
         </footer>
     </div>
