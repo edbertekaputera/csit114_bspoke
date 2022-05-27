@@ -3,7 +3,10 @@ CSIT114 B-Spoke Website
 
 Website for CSIT114 Group BIKEGANG
 
-For tidy purposes
+Members
 -----------------
-1. create folder of ur subsystem page
-2. name all your files with the name as prefix (eg. login.html, login_styles.css, login_scripts.js)
+1. Edbert Ekaputera
+2. Jonathan Bastine Kho
+3. Carlos Vincent Frasenda
+4. Lim Swee Fong
+5. Wong Quan Yong
